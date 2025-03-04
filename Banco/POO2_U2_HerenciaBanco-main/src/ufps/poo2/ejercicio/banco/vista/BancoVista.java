@@ -17,7 +17,6 @@ public class BancoVista extends javax.swing.JFrame {
      */
     public BancoVista() {
         initComponents();
-        
         controller = new BancoControlador(this);
     }
 
@@ -68,13 +67,33 @@ public class BancoVista extends javax.swing.JFrame {
 
         buttonGroup1.add(rbAhorros);
         rbAhorros.setText("Cta. Ahorros");
+        rbAhorros.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                rbAhorrosActionPerformed(evt);
+            }
+        });
 
         buttonGroup1.add(rbCorriente);
         rbCorriente.setText("Cta. Corriente");
+        rbCorriente.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                rbCorrienteActionPerformed(evt);
+            }
+        });
 
         btnCrear.setText("Abrir");
+        btnCrear.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btnCrearActionPerformed(evt);
+            }
+        });
 
         btnCancelar.setText("Cancelar");
+        btnCancelar.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btnCancelarActionPerformed(evt);
+            }
+        });
 
         javax.swing.GroupLayout jPanel1Layout = new javax.swing.GroupLayout(jPanel1);
         jPanel1.setLayout(jPanel1Layout);
@@ -139,8 +158,18 @@ public class BancoVista extends javax.swing.JFrame {
         jLabel4.setText("Valor: $");
 
         btnCancelarAcciones.setText("Cancelar");
+        btnCancelarAcciones.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btnCancelarAccionesActionPerformed(evt);
+            }
+        });
 
         btnAplicar.setText("Aplicar");
+        btnAplicar.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btnAplicarActionPerformed(evt);
+            }
+        });
 
         javax.swing.GroupLayout jPanel2Layout = new javax.swing.GroupLayout(jPanel2);
         jPanel2.setLayout(jPanel2Layout);
@@ -240,6 +269,30 @@ public class BancoVista extends javax.swing.JFrame {
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
+
+    private void rbCorrienteActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_rbCorrienteActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_rbCorrienteActionPerformed
+
+    private void rbAhorrosActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_rbAhorrosActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_rbAhorrosActionPerformed
+
+    private void btnCrearActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnCrearActionPerformed
+        controller.abrirCuenta();
+    }//GEN-LAST:event_btnCrearActionPerformed
+
+    private void btnCancelarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnCancelarActionPerformed
+        controller.cancelarCuenta();
+    }//GEN-LAST:event_btnCancelarActionPerformed
+
+    private void btnAplicarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnAplicarActionPerformed
+        controller.aplicar();
+    }//GEN-LAST:event_btnAplicarActionPerformed
+
+    private void btnCancelarAccionesActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnCancelarAccionesActionPerformed
+        controller.cancelar();
+    }//GEN-LAST:event_btnCancelarAccionesActionPerformed
 
     /**
      * @param args the command line arguments
