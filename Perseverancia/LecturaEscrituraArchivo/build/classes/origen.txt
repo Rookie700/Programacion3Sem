@@ -1,9 +1,0 @@
-1;sebastian;88000000;boris@correo.com
-2;laura;90000000;laura@correo.com
-3;isabel;17000000;isabel@correo.com
-4;margarita;7000000;margarita@correo.com
-5;maya;15056000;maya@correo.com
-6;andres;100000000;andres@correo.com
-7;lorena;13000000;lorena@correo.com
-8;maria;50000000;maria@correo.com
-9;ramiro;6000000;ramiro@correo.com
